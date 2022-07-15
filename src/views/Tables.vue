@@ -5,23 +5,16 @@
         <authors-table />
       </div>
     </div>
-    <div class="mt-4 row">
-      <div class="col-12">
-        <projects-table />
-      </div>
-    </div>
   </div>
 </template>
 
 <script>
 import AuthorsTable from "./components/AuthorsTable.vue";
-import ProjectsTable from "./components/ProjectsTable.vue";
 
 export default {
   name: "tables",
   components: {
     AuthorsTable,
-    ProjectsTable
   },
   data() {
     return {

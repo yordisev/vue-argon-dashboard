@@ -6,10 +6,7 @@ export default createStore({
     isPinned: true,
     showConfig: false,
     sidebarType: "bg-white",
-    isRTL: false,
     mcolor: "",
-    darkMode: false,
-    isNavFixed: false,
     isAbsolute: false,
     showNavs: true,
     showSidenav: true,
@@ -37,13 +34,6 @@ export default createStore({
     },
     sidebarType(state, payload) {
       state.sidebarType = payload;
-    },
-    navbarFixed(state) {
-      if (state.isNavFixed === false) {
-        state.isNavFixed = true;
-      } else {
-        state.isNavFixed = false;
-      }
     }
   },
   actions: {

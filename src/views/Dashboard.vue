@@ -49,19 +49,8 @@
             ></card>
           </div>
         </div>
-        <div class="row">
-          <div class="col-lg-7 mb-lg">
-            <!-- line chart -->
-            <div class="card z-index-2">
-              <gradient-line-chart />
-            </div>
-          </div>
-          <div class="col-lg-5">
-            <carousel />
-          </div>
-        </div>
         <div class="row mt-4">
-          <div class="col-lg-7 mb-lg-0 mb-4">
+          <div class="col-lg-12 mb-lg-0 mb-4">
             <div class="card">
               <div class="p-3 pb-0 card-header">
                 <div class="d-flex justify-content-between">
@@ -107,9 +96,6 @@
               </div>
             </div>
           </div>
-          <div class="col-lg-5">
-            <categories-card />
-          </div>
         </div>
       </div>
     </div>
@@ -117,9 +103,6 @@
 </template>
 <script>
 import Card from "@/examples/Cards/Card.vue";
-import GradientLineChart from "@/examples/Charts/GradientLineChart.vue";
-import Carousel from "./components/Carousel.vue";
-import CategoriesCard from "./components/CategoriesCard.vue";
 
 import US from "@/assets/img/icons/flags/US.png";
 import DE from "@/assets/img/icons/flags/DE.png";
@@ -199,9 +182,6 @@ export default {
   },
   components: {
     Card,
-    GradientLineChart,
-    Carousel,
-    CategoriesCard,
   },
 };
 </script>
